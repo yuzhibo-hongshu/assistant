@@ -9,10 +9,11 @@ import com.hs.assistant.R;
 import com.hs.assistant.activity.fragment.CommonFragment;
 import com.hs.assistant.activity.fragment.MainFragment;
 import com.hs.assistant.activity.fragment.MeFragment;
+import com.hs.assistant.util.DensityUtil;
 
 public class MainActivity extends AppCompatActivity {
 
-    private BottomTabBar mBottomBar;
+    private BottomTabBar bottomBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,9 +22,10 @@ public class MainActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);//去掉信息栏
         setContentView(R.layout.activity_main);
 
-        mBottomBar = (BottomTabBar) findViewById(R.id.bottom_bar);
-        mBottomBar.init(getSupportFragmentManager())
-                .setImgSize(60, 60)
+        float imgSize= DensityUtil.dip2px(MainActivity.this,23);//适应不同分辨率的屏幕
+        bottomBar = (BottomTabBar) findViewById(R.id.bottom_bar);
+        bottomBar.init(getSupportFragmentManager())
+                .setImgSize(imgSize, imgSize)
                 .setFontSize(12)
                 .setTabPadding(15, 6, 15)
                 .setChangeColor(Color.parseColor("#458fea"), Color.parseColor("#000000"))
@@ -39,6 +41,5 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
     }
-
 
 }
