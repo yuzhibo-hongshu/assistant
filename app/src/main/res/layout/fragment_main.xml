@@ -1,15 +1,58 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.hjm.simple.fragment.OneFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    android:orientation="vertical"
+    xmlns:leon="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="OneFragment"
-        android:textSize="50dp" />
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/skyblue"
+            android:gravity="center"
+            android:visibility="visible">
+            <ImageView
+                android:id="@+id/textView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/assistant"
+                android:layout_gravity="center"/>
+        </LinearLayout>
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.leon.lib.settingview.LSettingItem
+                android:id="@+id/item2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                leon:isShowUnderLine="false"
+                leon:leftIcon="@mipmap/ic_launcher"
+                leon:leftText="广告拦截"
+                leon:rightStyle="iconSwitch"/>
+            <com.leon.lib.settingview.LSettingItem
+                android:id="@+id/item3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                leon:isShowUnderLine="false"
+                leon:leftIcon="@mipmap/ic_launcher"
+                leon:leftText="红包助手"
+                leon:rightStyle="iconSwitch"/>
+            <com.leon.lib.settingview.LSettingItem
+                android:id="@+id/item4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                leon:isShowUnderLine="false"
+                leon:leftIcon="@mipmap/ic_launcher"
+                leon:leftText="其他"
+                leon:rightStyle="iconSwitch"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

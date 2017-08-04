@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 .addTabItem("主页", R.mipmap.tab_main_select, R.mipmap.tab_main_unselect, MainFragment.class)
                 .addTabItem("常用", R.mipmap.tab_common_select, R.mipmap.tab_common_unselect, CommonFragment.class)
                 .addTabItem("我的", R.mipmap.tab_me_select,R.mipmap.tab_me_unselect, MeFragment.class)
-                .setTabBarBackgroundResource(R.drawable.tabbg)
+                .setTabBarBackgroundResource(R.drawable.tab_background)
                 .isShowDivider(false)
                 .setOnTabChangeListener(new BottomTabBar.OnTabChangeListener() {
                     @Override
