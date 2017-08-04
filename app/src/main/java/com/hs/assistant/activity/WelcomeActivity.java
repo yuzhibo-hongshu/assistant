@@ -3,10 +3,13 @@ package com.hs.assistant.activity;
 import com.hs.assistant.R;
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
+import android.util.Log;
+import android.widget.TextView;
 
 public class WelcomeActivity extends Activity{
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -15,6 +18,14 @@ public class WelcomeActivity extends Activity{
     }
 	
     private void init(){
+		// 加载自定义字体
+		try{
+			Typeface fontFamily = Typeface.createFromAsset(getAssets(),"fonts/STXinSong.ttf");
+			TextView appName = (TextView)findViewById(R.id.app_name) ;
+			appName.setTypeface(fontFamily) ;
+		}catch(Exception e){
+			Log.e("assistant",e.toString());
+		}
 		new Thread(){
 			@Override
 	   		public void run(){
