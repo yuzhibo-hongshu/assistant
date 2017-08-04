@@ -32,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 leon:isShowUnderLine="false"
-                leon:leftIcon="@mipmap/ic_launcher"
+                leon:leftIcon="@mipmap/ad"
                 leon:leftText="广告拦截"
                 leon:rightStyle="iconSwitch"/>
             <com.leon.lib.settingview.LSettingItem
@@ -41,17 +41,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 leon:isShowUnderLine="false"
-                leon:leftIcon="@mipmap/ic_launcher"
+                leon:leftIcon="@mipmap/red_packet"
                 leon:leftText="红包助手"
-                leon:rightStyle="iconSwitch"/>
-            <com.leon.lib.settingview.LSettingItem
-                android:id="@+id/item4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                leon:isShowUnderLine="false"
-                leon:leftIcon="@mipmap/ic_launcher"
-                leon:leftText="其他"
                 leon:rightStyle="iconSwitch"/>
         </LinearLayout>
     </LinearLayout>

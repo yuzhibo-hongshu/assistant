@@ -5,27 +5,33 @@
     android:orientation="vertical"
     xmlns:leon="http://schemas.android.com/apk/res-auto">
     <LinearLayout
-        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
         android:orientation="vertical">
         <TableLayout
             android:id="@+id/table1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/white"
             android:stretchColumns="*"
             android:padding="10dip">
             <TableRow
-                android:padding="10dp">
+                android:layout_marginTop="30dp">
                 <LinearLayout
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:background="@drawable/table_layout_click"
                     android:gravity="center"
                     android:orientation="vertical">
                     <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:src="@mipmap/ic_launcher"/>
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@mipmap/icon_time"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -34,12 +40,16 @@
                 <LinearLayout
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:background="@drawable/table_layout_click"
                     android:gravity="center"
                     android:orientation="vertical">
                     <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:src="@mipmap/ic_launcher"/>
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@mipmap/icon_file"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -48,12 +58,16 @@
                 <LinearLayout
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:background="@drawable/table_layout_click"
                     android:gravity="center"
                     android:orientation="vertical">
                     <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:src="@mipmap/ic_launcher"/>
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@mipmap/icon_money"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -61,16 +75,20 @@
                 </LinearLayout>
             </TableRow>
             <TableRow
-                android:padding="10dp">
+                android:layout_marginTop="30dp">
                 <LinearLayout
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
+                    android:padding="10dp"
+                    android:clickable="true"
+                    android:background="@drawable/table_layout_click"
                     android:gravity="center"
                     android:orientation="vertical">
                     <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:src="@mipmap/ic_launcher"/>
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@mipmap/icon_hand"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -79,12 +97,16 @@
                 <LinearLayout
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:background="@drawable/table_layout_click"
                     android:gravity="center"
                     android:orientation="vertical">
                     <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:src="@mipmap/ic_launcher"/>
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@mipmap/icon_shake"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -93,12 +115,16 @@
                 <LinearLayout
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:background="@drawable/table_layout_click"
                     android:gravity="center"
                     android:orientation="vertical">
                     <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:src="@mipmap/ic_launcher"/>
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@mipmap/icon_chart"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -115,26 +141,26 @@
                 android:id="@+id/item2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
                 leon:isShowUnderLine="false"
-                leon:leftIcon="@mipmap/ic_launcher"
-                leon:leftText="通用"/>
+                leon:leftIcon="@mipmap/icon_t"
+                leon:leftText="工具"/>
             <com.leon.lib.settingview.LSettingItem
                 android:id="@+id/item3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
                 leon:isShowUnderLine="false"
-                leon:leftIcon="@mipmap/ic_launcher"
-                leon:leftText="消息提示" />
+                leon:leftIcon="@mipmap/icon_net"
+                leon:leftText="工具" />
             <com.leon.lib.settingview.LSettingItem
                 android:id="@+id/item4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
                 leon:isShowUnderLine="false"
-                leon:leftIcon="@mipmap/ic_launcher"
-                leon:leftText="其他" />
+                leon:leftIcon="@mipmap/icon_fire"
+                leon:leftText="工具" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

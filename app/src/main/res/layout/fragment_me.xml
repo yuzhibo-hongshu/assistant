@@ -40,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 leon:isShowUnderLine="false"
-                leon:leftIcon="@mipmap/ic_launcher"
+                leon:leftIcon="@mipmap/school"
                 leon:leftText="通用"/>
             <com.leon.lib.settingview.LSettingItem
                 android:id="@+id/item3"
@@ -48,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 leon:isShowUnderLine="false"
-                leon:leftIcon="@mipmap/ic_launcher"
+                leon:leftIcon="@mipmap/home"
                 leon:leftText="消息提示" />
             <com.leon.lib.settingview.LSettingItem
                 android:id="@+id/item4"
@@ -56,8 +56,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 leon:isShowUnderLine="false"
-                leon:leftIcon="@mipmap/ic_launcher"
-                leon:leftText="其他" />
+                leon:leftIcon="@mipmap/plant"
+                leon:leftText="悬浮窗" />
         </LinearLayout>
 
     </LinearLayout>

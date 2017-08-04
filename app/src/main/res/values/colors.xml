@@ -9,7 +9,7 @@
     <drawable name="blue">#0000FF</drawable>
     <drawable name="gray">#919191</drawable>
     <drawable name="lightred">#90FF0000</drawable>
-    <drawable name="lightgray">#C4C4C4</drawable>
+    <drawable name="lightgray">#e0dfdf</drawable>
     <drawable name="titlebgcolor">#228B22</drawable>
     <drawable name="titlecolor">#FFFFFF</drawable>
     <drawable name="green">#228B22</drawable>
