@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="tab_normal_icon">
+        <item>@mipmap/tab_main_unselect</item>
+        <item>@mipmap/tab_common_unselect</item>
+        <item>@mipmap/tab_me_unselect</item>
+    </string-array>
+
+    <string-array name="tab_selected_icon">
+        <item>@mipmap/tab_main_select</item>
+        <item>@mipmap/tab_common_select</item>
+        <item>@mipmap/tab_me_select</item>
+    </string-array>
+
+    <string-array name="bottom_bar_labels">
+        <item>主页</item>
+        <item>常用</item>
+        <item>我的</item>
+    </string-array>
+    <string-array name="bottom_bar_icons">
+        <item>@mipmap/tab_main_unselect</item>
+        <item>@mipmap/tab_common_unselect</item>
+        <item>@mipmap/tab_me_unselect</item>
+    </string-array>
+</resources>
