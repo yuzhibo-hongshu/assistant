@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:leon="http://schemas.android.com/apk/res-auto">
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,7 +16,7 @@
             android:gravity="center"
             android:visibility="visible">
             <ImageView
-                android:id="@+id/textView"
+                android:id="@+id/assistant_img"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@mipmap/assistant"
@@ -26,24 +27,56 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <com.leon.lib.settingview.LSettingItem
-                android:id="@+id/item2"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                leon:isShowUnderLine="false"
-                leon:leftIcon="@mipmap/ad"
-                leon:leftText="广告拦截"
-                leon:rightStyle="iconSwitch"/>
-            <com.leon.lib.settingview.LSettingItem
-                android:id="@+id/item3"
+                android:background="@drawable/white"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:padding="15px">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/ad"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:text="广告拦截"/>
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/ad_switch_button"
+                    android:layout_gravity="right"
+                    app:sb_show_indicator="false"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                leon:isShowUnderLine="false"
-                leon:leftIcon="@mipmap/red_packet"
-                leon:leftText="红包助手"
-                leon:rightStyle="iconSwitch"/>
+                android:background="@drawable/white"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:padding="15px">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/red_packet"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:text="红包助手"/>
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/red_packet_switch_button"
+                    android:layout_gravity="right"
+                    app:sb_show_indicator="false"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

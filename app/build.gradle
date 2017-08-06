@@ -27,4 +27,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile project(':bottomtabbar')
     compile 'com.leon:lsettingviewlibrary:1.4.0'
+    compile 'com.github.zcweng:switch-button:0.0.3@aar'
 }
